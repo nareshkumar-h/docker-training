@@ -1,5 +1,7 @@
 # docker-training
 
+#### Step 1: In
+
 
 
 
@@ -7,6 +9,14 @@
 
 ```
 sudo curl -L https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+```
+* Set Permissions
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+* Check Version
+```
+
 ```
 
 #### Task 1: Create a Docker file for Spring Boot
@@ -40,3 +50,22 @@ services:
 volumes:
   db:
 ```
+
+#### Task 2.1:  Go to mysql running container
+* Check the mysql db
+
+```
+docker ps -a
+```
+
+```
+docker exec -it 398 /bin/bash
+```
+* Note: **ContainerId**: 398
+
+#### Task 2.2: Connect mysql
+```
+mysql -u root -p
+```
+Note: Password: rev_user
+
