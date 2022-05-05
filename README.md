@@ -1,16 +1,25 @@
 # docker-training
 
-#### Step 1: In
+#### Step 1: Install Docker
 
-
-
+```
+sudo yum install docker
+```
+#### Step 2: Start the Docker Daemon
+```
+sudo service docker start
+```
+```
+sudo service docker status
+```
 
 #### Install Docker Compose
 
+* **Download**
 ```
 sudo curl -L https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 ```
-* Set Permissions
+* **Set Permissions**
 ```
 sudo chmod +x /usr/local/bin/docker-compose
 ```
