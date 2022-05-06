@@ -5,3 +5,12 @@
 
 
 Reference: https://docs.microsoft.com/en-us/dotnet/architecture/microservices/container-docker-introduction/
+
+
+#### What is Container ?
+
+* A container is a standard unit of software that packages up code and all its **dependencies** so the application runs quickly and **reliably from one computing environment to another**.
+
+* **My Project** - touristapp.jar( Spring Boot Application JAR)
+* **Dependencies** : JDK17 + MySQL8
+* **Environment**: Windows vs Linux
